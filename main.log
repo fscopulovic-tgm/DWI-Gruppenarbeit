@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.2.3)  19 JAN 2019 19:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.2.3)  19 JAN 2019 19:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1424,15 +1424,64 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--24
 
  []
 
-) [12.12] (./main.bbl
+[12.12]) [13.13] (./main.bbl
 LaTeX Info: Redefining \tempurl on input line 60.
-LaTeX Info: Redefining \tempurl on input line 84.
-LaTeX Info: Redefining \tempurl on input line 97.
-LaTeX Info: Redefining \tempurl on input line 110.
-LaTeX Info: Redefining \tempurl on input line 123.
+
+
+! Package inputenc Error: Unicode char äer (U+DB)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70   Data}}
+             .
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70   Data}}
+             .
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `utf8'.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70   Data}}
+             .
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+LaTeX Info: Redefining \tempurl on input line 74.
+
+Underfull \hbox (badness 5924) in paragraph at lines 67--77
+[]\T1/LinuxBiolinumT-TLF/m/n/8 (+20) heise on-line. 2016.  Studie: Eu-rop berwi
+egend skep-tisch gegen-ber Big Data.    []$h^^]ps : / / www . heise . de / ix /
+ meldung /
+ []
+
+LaTeX Info: Redefining \tempurl on input line 98.
+LaTeX Info: Redefining \tempurl on input line 111.
+LaTeX Info: Redefining \tempurl on input line 124.
 LaTeX Info: Redefining \tempurl on input line 137.
 LaTeX Info: Redefining \tempurl on input line 151.
-) [13.13]
+LaTeX Info: Redefining \tempurl on input line 165.
+) [14.14]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 129.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 129.
  (./main.aux)
@@ -1442,11 +1491,11 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 42DB89ADB2E927E2833265DA117BE8DE;3900.
  ) 
 Here is how much of TeX's memory you used:
- 18285 strings out of 492995
- 271425 string characters out of 6132705
- 386272 words of memory out of 5000000
- 21095 multiletter control sequences out of 15000+600000
- 87196 words of font info for 199 fonts, out of 8000000 for 9000
+ 18288 strings out of 492995
+ 271453 string characters out of 6132705
+ 386316 words of memory out of 5000000
+ 21099 multiletter control sequences out of 15000+600000
+ 87044 words of font info for 197 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
  60i,11n,94p,964b,499s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc
@@ -1456,10 +1505,10 @@ mTB.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/libertine/LinBio
 linumTBO.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/libertine/L
 inBiolinumTI.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/newtx/t
 xsys.pfb>
-Output written on main.pdf (13 pages, 267427 bytes).
+Output written on main.pdf (14 pages, 270366 bytes).
 PDF statistics:
- 267 PDF objects out of 1000 (max. 8388607)
- 236 compressed objects within 3 object streams
- 66 named destinations out of 1000 (max. 500000)
+ 280 PDF objects out of 1000 (max. 8388607)
+ 248 compressed objects within 3 object streams
+ 68 named destinations out of 1000 (max. 500000)
  24277 words of extra memory for PDF output out of 24883 (max. 10000000)
 
