@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{8}
+\begin{thebibliography}{10}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -87,9 +87,22 @@
 
 
 \bibitem[\protect\citeauthoryear{LVA-Team}{LVA-Team}{2018b}]%
-        {slidesCritical}
+        {slidesCreative}
 \bibfield{author}{\bibinfo{person}{DWI LVA-Team}.}
   \bibinfo{year}{2018}\natexlab{b}.
+\newblock \bibinfo{title}{{Aurora: Slides dwi} - Slides for Creative Thinking}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Creative%20Thinking/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{LVA-Team}{LVA-Team}{2018c}]%
+        {slidesCritical}
+\bibfield{author}{\bibinfo{person}{DWI LVA-Team}.}
+  \bibinfo{year}{2018}\natexlab{c}.
 \newblock \bibinfo{title}{{Aurora: Slides dwi} - Slides for Critical Thinking}.
 \newblock
 \newblock
@@ -99,10 +112,23 @@
 \tempurl}
 
 
-\bibitem[\protect\citeauthoryear{LVA-Team}{LVA-Team}{2018c}]%
+\bibitem[\protect\citeauthoryear{LVA-Team}{LVA-Team}{2018d}]%
+        {slidesDesign}
+\bibfield{author}{\bibinfo{person}{DWI LVA-Team}.}
+  \bibinfo{year}{2018}\natexlab{d}.
+\newblock \bibinfo{title}{{Aurora: Slides dwi} - Slides for Design Thinking}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Chapter_Design%20Thinking/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{LVA-Team}{LVA-Team}{2018e}]%
         {slidesResp}
 \bibfield{author}{\bibinfo{person}{DWI LVA-Team}.}
-  \bibinfo{year}{2018}\natexlab{c}.
+  \bibinfo{year}{2018}\natexlab{e}.
 \newblock \bibinfo{title}{{Aurora: Slides dwi} - Slides for Responsible
   Thinking}.
 \newblock
@@ -113,10 +139,10 @@
 \tempurl}
 
 
-\bibitem[\protect\citeauthoryear{LVA-Team}{LVA-Team}{2018d}]%
+\bibitem[\protect\citeauthoryear{LVA-Team}{LVA-Team}{2018f}]%
         {slidesScientifc}
 \bibfield{author}{\bibinfo{person}{DWI LVA-Team}.}
-  \bibinfo{year}{2018}\natexlab{d}.
+  \bibinfo{year}{2018}\natexlab{f}.
 \newblock \bibinfo{title}{{Aurora: Slides dwi} - Slides for Scientific
   Thinking}.
 \newblock

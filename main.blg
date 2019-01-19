@@ -42,45 +42,45 @@ Too many commas in name 1 of "Sebastian Deterding, Dan Dixon, Rilla Khaled, Lenn
 while executing---line 2885 of file ACM-Reference-Format.bst
 Too many commas in name 1 of "Sebastian Deterding, Dan Dixon, Rilla Khaled, Lennart Nacke" for entry gameDesignElements
 while executing---line 2885 of file ACM-Reference-Format.bst
-You've used 8 entries,
+You've used 10 entries,
             5719 wiz_defined-function locations,
-            1330 strings with 15607 characters,
-and the built_in function-call counts, 5882 in all, are:
-= -- 614
-> -- 154
+            1338 strings with 15915 characters,
+and the built_in function-call counts, 7242 in all, are:
+= -- 760
+> -- 190
 < -- 0
-+ -- 43
-- -- 61
-* -- 332
-:= -- 693
-add.period$ -- 42
-call.type$ -- 8
-change.case$ -- 40
++ -- 55
+- -- 75
+* -- 408
+:= -- 853
+add.period$ -- 52
+call.type$ -- 10
+change.case$ -- 50
 chr.to.int$ -- 5
-cite$ -- 8
-duplicate$ -- 560
-empty$ -- 403
-format.name$ -- 61
-if$ -- 1243
-int.to.chr$ -- 5
+cite$ -- 10
+duplicate$ -- 688
+empty$ -- 497
+format.name$ -- 75
+if$ -- 1535
+int.to.chr$ -- 7
 int.to.str$ -- 1
 missing$ -- 4
-newline$ -- 128
-num.names$ -- 61
-pop$ -- 187
+newline$ -- 152
+num.names$ -- 75
+pop$ -- 231
 preamble$ -- 1
-purify$ -- 106
+purify$ -- 130
 quote$ -- 0
-skip$ -- 211
+skip$ -- 259
 stack$ -- 0
-substring$ -- 417
-swap$ -- 46
+substring$ -- 513
+swap$ -- 56
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 192
+type$ -- 240
 warning$ -- 0
-while$ -- 61
+while$ -- 75
 width$ -- 0
-write$ -- 195
+write$ -- 235
 (There were 16 error messages)
