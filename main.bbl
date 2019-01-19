@@ -1,0 +1,99 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{5}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{A.~Jain}{A.~Jain}{2015}]%
+        {uninvatedGuests}
+\bibfield{author}{\bibinfo{person}{J.~Flint A.~Fruhstorfer A.~Jain,
+  J.~Ardern}.} \bibinfo{year}{2015}\natexlab{}.
+\newblock \bibinfo{title}{{UNINVITED GUESTS}}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{http://superflux.in/index.php/work/uninvited-guests/#}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Habitica}{Habitica}{2019}]%
+        {habitica}
+\bibfield{author}{\bibinfo{person}{Habitica}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \bibinfo{title}{{Habitica} - Gamify Your Life}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://habitica.com/static/home}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{James J.~Lu}{James J.~Lu}{2009}]%
+        {thinkingAboutCompThinking}
+\bibfield{author}{\bibinfo{person}{George H. L.~Fletcher James J.~Lu}.}
+  \bibinfo{year}{2009}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Thinking About Computational Thinking}}.
+\newblock \bibinfo{publisher}{ACM}, \bibinfo{address}{Chattanooga, Tennessee,
+  USA}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{LVA-Team}{LVA-Team}{2018}]%
+        {slidesComp}
+\bibfield{author}{\bibinfo{person}{DWI LVA-Team}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \bibinfo{title}{{Aurora: Slides dwi} - Slides for Computional
+  Thinking}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://aurora.iguw.tuwien.ac.at/course/dwi/slides/Lecture_12.11.2018/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Sebastian~Deterding}{Sebastian~Deterding}{2011}]%
+        {gameDesignElements}
+\bibfield{author}{\bibinfo{person}{Rilla Khaled Lennart~Nacke
+  Sebastian~Deterding, Dan~Dixon}.} \bibinfo{year}{2011}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{From game design elements to gamefulness:
+  defining ''gamification''}}.
+\newblock \bibinfo{publisher}{ACM}, \bibinfo{address}{Tampere, Finland}.
+\newblock
+
+
+\end{thebibliography}

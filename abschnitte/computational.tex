@@ -1,0 +1,130 @@
+%!TEX root=../main.tex
+
+\subsection{Was macht Computational Thinking aus?}
+Computational Thinking beschäftigt sich mit der Bearbeitung komplexer Probleme, bei denen es ohne die Rechenleistung von Computern fast unmöglich wäre die gleichen Ergebnisse zu erzielen. Der Grund für die Komplexität kann sehr unterschiedlich sein, aber ein häufiger Grund sind große Datenmengen. Zur Lösung dieser Probleme werden Algorithmen herangezogen. Wichtige Konzepte die für dieses Problem relevant sind beinhalten:\cite{slidesComp}
+\begin{itemize}
+	\item Algorithmen (Spezifikation, Zerlegung, Abstraktion, Skalierbarkeit, Reduktion)\cite{slidesComp}
+	\item Efficiency, correction, data represenation\cite{thinkingAboutCompThinking}
+\end{itemize}
+
+\subsection{Analyse}
+Das System besteht aus mehreren Teilen, die gemeinsam Daten sammeln und analysieren um Aussagen über die Ernährung, Bewegung und den Schlaf einer Person zu treffen. \\
+
+Die grundlegenden Probleme die das System behandeln muss sind folgende: 
+\begin{itemize}
+	\item Datenerhebung 
+	\begin{itemize}
+		\item Analyse des Essens durch Fork oder zählen der Schritte durch Cane 
+	\end{itemize}
+
+	\item Datentransport 
+	\begin{itemize}
+		\item Die Daten müssen zu den Computern transportiert werden in denen sie verarbeitet werden können (Annahme: Smart Objects machen das nicht selbst). 
+		\item Weiteres müssen sie an die Kontakte verteilt werden können. 
+	\end{itemize}  
+
+	\item Analyse
+	\begin{itemize}
+		\item Es muss eine Analyse der Daten stattfinden um möglichst optimales Feedback liefern zu können. 
+	\end{itemize}  
+
+	\item User Interface 
+	\begin{itemize}
+			\item Die Ergebnisse müssen verschiedenen Benutzern präsentiert werden. 
+	\end{itemize}
+\end{itemize}
+
+Hierbei werden verschiedene Algorithmen eingesetzt (in den geschwungenen Klammern ist die Zuordnung zu den Problemstellungen annotiert:
+\begin{itemize}
+	\item Zeitsteuerung  \{ \textit{User Interface }\}: 
+	\begin{itemize}
+		\item Das System wird aufgrund von Zeitintervallen gesteuert (Essenszeit, Schlafenszeit). Zu diesen Zeitpunkten müssen jeweils andere Algorithmen aktiviert werden.
+	\end{itemize}
+
+	\item Essensanalyse (Fork) \{ \textit{Datenerhebung} \}: 
+	\begin{itemize}
+		\item Die Gabel muss aufgrund der aufgespießten Nahrung deren Nährwert und Inhaltsstoffe erkennen können. Zudem müssen diese gegen eine Referenz verglichen werden. 
+	\end{itemize}
+
+	\item Drucksensor (Cane, Bed) \{ \textit{Datenerhebung} \} 
+	\begin{itemize}
+		\item Bed und Cane beinhalten jeweils einen Drucksensor der abgefragt werden muss ob die jeweiligen Tätigkeiten gerade verrichtet werden. 
+	\end{itemize}
+
+	\item Messaging \{ \textit{Datentransport, User Interface} \} 
+	\begin{itemize}
+		\item Die Kommunikation des Systems mit Benutzer\_innen erfolgt über Push Nachrichten. Im Notfall können auch andere Kontakte hinterlegt werden um die Verwendung der Smart Utensilien zu gewährleisten. 
+	\end{itemize}
+
+	\item Datenverteilung \{ \textit{Datentransport} \} 
+	\begin{itemize}
+		\item Die erfassten Daten können an die anderen Kontakte geschickt werden. 
+	\end{itemize}
+	
+	\item Datenauswertung: \{ \textit{Analyse} \}
+	\begin{itemize}
+		\item Die Daten werden auf hier untersucht und mit Referenzwerten verglichen um passende Nachrichten an die Endgeräte versenden zu können. 
+		\item Dieser Algorithmus ist sehr komplex (Annahme) und verwendet viele einfachere Algorithmen um dieses Ziel zu erreichen (suchen, sortieren, filtern, vergleichen \dots).
+	\end{itemize}
+\end{itemize}
+
+Aus technischer Sicht konnte ich folgende Abstraktionen im System feststellen:
+\begin{itemize}
+	\item Smart Devices 
+	\begin{itemize}
+		\item Die Smart Devices sind die abstrakteste Schicht, sie verstecken die Komplexität des gesamten Systems hinter alltäglichen Gegenständen. 
+	\end{itemize}
+
+	\item Datenaustausch (Annahme)
+	\begin{itemize}
+		\item Der Datenaustausch erfolgt über verschiedene Protokolle und an verschiedenste Endgeräte (Server, Smart Devices, Smartphones von den Kontakten\dots ) und kapselt damit die Komplexität dieser Vorgänge ab
+	\end{itemize}
+
+	\item Sensoren
+	\begin{itemize}
+		\item Die I/O Schnittstellen der Sensoren kapseln deren interne Funktionalität ab. 
+	\end{itemize}
+
+	\item Datenverarbeitung
+	\begin{itemize}
+		\item Die Schnittstellen der Algorithmen (Input vs. Output) abstrahieren die Komplexität der zugrundeliegenden Operationen.
+	\end{itemize}
+\end{itemize}
+
+\subsubsection{\textbf{Tagesanalyse}}
+Ich habe die drei, im Video betrachteten, Tage getrennt voneinander betrachtet und folgende Dinge festgestellt: \\
+Am ersten Tag ist die Datenqualität optimal und das System kann wertvolles Feedback für den Mann liefern. Die einzelnen Geräte werden für die vorherbestimmten Tätigkeiten verwendet und treffen ihre Entscheidungen aufgrund valider Daten. Das Feedback für den Benutzer ist in diesem speziellen Fall negativ, aber das stimmt mit den gewonnenen Daten voll überein. \\
+Am zweiten Tag wurden keine Daten an das System geliefert. Die zuständigen eingetragenen Kontakte wurden informiert (Annahme), aber es wurden von der Smart Fork und dem Smart Cane keine Daten gesammelt. Das Smart Bed konnte lediglich feststellen, dass die Person zu spät ins Bett kam, die Push Nachrichten wurden ignoriert. \\
+Am dritten Tag wurden die gesammelten Daten stark verfälscht. Die Smart Fork wurde manipuliert in dem das Essen nicht wirklich verzehrt sondern nur daran gestochert wurde. Der Smart Cane wurde von einer anderen Person verwendet um auf die tägliche empfohlene Schrittanzahl zu kommen. Und der Drucksensor des Smart Bed wurde mit Hilfe von Büchern überlistet. All diese Manipulationen führten jeweils zu positivem Feedback, da die nötigen Parameter für die Algorithmen gegeben wurden.\\
+
+\subsection{Problem Framing}
+Das größte Problem aus der Sicht des Computational Thinking ist die Datenqualität, da die Analyse durch die Algorithmen mit falschem Input auch falschen Output liefert. Der Ansatz ist gescheitert, weil es Den Benutzer\_innen möglich ist die Daten zu fälschen. Wäre die Richtigkeit der Daten sichergestellt (könnte man das System also nicht ''überlisten'') könnten auch die Algorithmen im Hintergrund deutlich besseres Feedback liefern. \\
+Ein weiteres Problem ist die Individualität bei den Aktivitäten. Die Smart Devices verwenden einen Standard und wenden diesen auf alle Personen an, wobei ein personalisiertes Ziel vermutlich zu besseren Ergebnissen führen würde. 
+
+\subsection{Gestaltungsvorschlag}
+Die Probleme könnten mit einer Kombination aus verschiedenen Ansätzen zumindest gemildert werden: 
+\begin{enumerate}
+	\item Authentifizierung: Um Fälschung der Daten durch andere zu vermeiden muss eine biometrische Authentifizierung stattfinden (zB Fingerabdruck oder Iris Scan) 
+	\item Artificial Intelligence: Um verfälschte Daten besser zu erkennen könnte eine AI programmiert werden die die Daten auf historische Muster vergleicht und damit eine Angabe zur Relevanz der Daten machen kann.
+	\item Verifikation: Sollten Daten stark von erwarteten Daten abweichen könnte eine zusätzliche Verifikation (z.B. per Foto) veranlasst werden. 
+	\item Gamification\cite{gameDesignElements}: Um den Prozess der Datenerhebung für Benutzer\_innen attraktiver zu machen könnten diverse Methoden der Gamification verwendet werden. Zum Beispiel könnten Fortschritte an Applikationen wie Habitica\cite{habitica} gesendet werden.
+\end{enumerate}
+
+Verworfene Ansätze:
+\begin{itemize}
+	\item Interpolierende Algorithmen (Gesundheitsrisiko)
+	\begin{itemize}
+		\item Sind starke Abweichungen in den Daten vorhanden sein können diese mit Interpolation geglättet werden um etwaige Datenverfälschung zu mindern.
+	\end{itemize}
+
+	\item Bestrafen von Fehlverhalten (Ethik)
+	\begin{itemize}
+		\item Wird Fehlverhalten festgestellt könnten negative Auswirkungen dies für zukünftige Fälle unattraktiver machen.
+		\item Beispiele hierfür sind strikte Pläne für die Ernährung oder Bewegung, oder direktere Methoden wie leichte Elektroschocks. 
+	\end{itemize}
+
+	\item Eingabe der Daten
+	\begin{itemize}
+		\item Die Eingabe der Daten funktioniert bereits optimal, sie ist in der Verwendung alltäglicher Gegenstände vollständig abstrahiert worden. 
+	\end{itemize}
+\end{itemize}

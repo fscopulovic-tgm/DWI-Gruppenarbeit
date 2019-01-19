@@ -1,0 +1,129 @@
+\documentclass[sigchi-a, authorversion]{acmart}
+\usepackage{booktabs} % For formal tables
+\usepackage{ccicons}  % For Creative Commons citation icons
+\usepackage[utf8]{inputenc}
+\settopmatter{printacmref=false}
+
+% Copyright
+\setcopyright{none}
+
+
+% DOI
+\acmDOI{00.000/00.0}
+
+% ISBN
+\acmISBN{123-4567-24-567/08/06}
+
+%Conference
+\acmConference[DENKWEISEN'18]{Denkweisen der Informatik}{Wintersemester 2018}{Wien, Österreich}
+\acmYear{2018}
+\copyrightyear{2018}
+
+
+\begin{document}
+
+\title{Beyond the Uninvited Guest}
+
+\author{Beischlager Georg}
+\affiliation{%
+  \institution{TU Wien, 01325245}
+  }
+\email{e1325245@student.tuwien.ac.at}
+
+\author{Heimerl Felix}
+\affiliation{%
+  \institution{TU Wien, 11728801}
+  }
+\email{e11728801@student.tuwien.ac.at}
+
+\author{Heissenberger Christopher}
+\affiliation{%
+  \institution{TU Wien, 01623652}
+  }
+\email{e1623652@student.tuwien.ac.at}
+
+\author{Scopulovic Filip}
+\affiliation{%
+  \institution{TU Wien, 11810848}
+  }
+\email{e11810848@student.tuwien.ac.at}
+
+% The default list of authors is too long for headers.
+\renewcommand{\shortauthors}{F. Author et al.}
+
+\maketitle
+
+\begin{abstract}
+    Eine Zusammenfassung des Papers (150 Wörter)
+
+\end{abstract}
+
+% =============================================================================
+\section{Introduction}
+% =============================================================================
+
+Dieses Paper handelt von einem Projekt namens ''Uninvited Guests''\cite{uninvatedGuests} und der Analyse des Projektes mittels verschiedenen Denkweisen. Es werden folgende sechs Denkweisen in diesem Paper behandelt:
+\begin{itemize}
+	\item Computational Thinking
+	\item Scientific Thinking
+	\item Responsible \& Critical Thinking
+	\item Design \& Creative Thinking
+\end{itemize}
+
+Anfangs werden die Denkweisen beschrieben. Anschließend wird das Video mit den jeweiligen Denkweisen analysiert. Es folgt eine Beschreibung der auftretenden Probleme und eine Lösung von diesen.\\
+Am Ende des Papers erfolgt eine Diskussion, in welchen Punkten sich die verschiedenen Denkweisen überschneiden und/oder sich diese aber widersprechen. Zudem wird ein Ausblick gegeben, wie die genannten Gegenstände aus dem Projekt\cite{uninvatedGuests} konkret verbessert werden können und wie diese Verbesserung umgesetzt werden sollte.
+
+\newpage
+% =============================================================================
+\section{Computational Thinking}
+% =============================================================================
+
+\input{abschnitte/computational.tex}
+\newpage
+
+% =============================================================================
+\section{Scientific Thinking}
+% =============================================================================
+
+\input{abschnitte/scientific.tex}
+\newpage
+
+% =============================================================================
+\section{Responsible \& Critical Thinking}
+% =============================================================================
+
+\input{abschnitte/critical.tex}
+\newpage
+
+% =============================================================================
+\section{Design \& Creative Thinking}
+% =============================================================================
+
+\input{abschnitte/design.tex}
+\newpage
+
+% =============================================================================
+\section{Diskussion}
+% =============================================================================
+
+Welche Querverbindungen, Gemeinsamkeiten, Spannungsfelder, Widersprüche, Konflikte etc. sehen sie zwischen den unterschiedlichen Herangehensweisen?
+
+Wie würden sie dieser Verbindungen bewerten oder priorisieren?
+
+Wie könnten diese Denkweisen ineinander greifen um die Probleme in ``Uninvited Guest'' zu lösen?
+
+% =============================================================================
+\section{Ausblick}
+% =============================================================================
+
+Wenn sie damit beauftragt wären die Technologien in `Uninvited Guest'' zu verbessern, wie würden sie das konkret angehen?
+
+Welche Studien würden sie machen, was würden sie entwickeln, was würden sie wie testen?
+
+
+
+
+\bibliography{Literature}
+\bibliographystyle{ACM-Reference-Format}
+
+\end{document}
