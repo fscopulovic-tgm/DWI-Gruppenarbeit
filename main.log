@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.2.3)  20 JAN 2019 04:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2018.2.3)  20 JAN 2019 04:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1360,29 +1360,28 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
-(Font)              scaled to size 20.74pt on input line 54.
+(Font)              scaled to size 20.74pt on input line 30.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 20.74pt on input line 54.
+(Font)              scaled to size 20.74pt on input line 30.
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 54.
+(Font)              scaled to size 10.0pt on input line 30.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
+(Font)              scaled to size 8.0pt on input line 30.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 54.
+(Font)              scaled to size 10.0pt on input line 42.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `LinuxLibertineT-TLF' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.3pt on input line 54.
+(Font)              scaled to size 7.3pt on input line 42.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/it' will be
-(Font)              scaled to size 8.0pt on input line 54.
- [1.1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+) [1.1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./abschnitte/computational.tex
 Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
@@ -1409,7 +1408,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--7
  []
 
 [8.8] [9.9])
-Overfull \hbox (7.60646pt too wide) in paragraph at lines 33--95
+Overfull \hbox (7.60646pt too wide) in paragraph at lines 33--71
 \T1/LinuxBiolinumT-TLF/m/n/10 (-20) Um Miss-brauch der Daten und eine Überwachu
 ng zu ver-hin-dern, sollte es die Möglichkeit geben, diese ^^RÜberwachung
  []
@@ -1425,7 +1424,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 22--24
  []
 
 [12.12]) [13.13]
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
@@ -1487,11 +1486,11 @@ LaTeX Info: Redefining \tempurl on input line 137.
 LaTeX Info: Redefining \tempurl on input line 151.
 LaTeX Info: Redefining \tempurl on input line 165.
 ) [16.16]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 136.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 136.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 112.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 112.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 136.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 136.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 112.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 112.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 58FE0A8972FFC576C670A991CE783225;4152.
  ) 
@@ -1510,7 +1509,7 @@ mTB.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/libertine/LinBio
 linumTBO.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/libertine/L
 inBiolinumTI.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/newtx/t
 xsys.pfb>
-Output written on main.pdf (16 pages, 275523 bytes).
+Output written on main.pdf (16 pages, 274314 bytes).
 PDF statistics:
  304 PDF objects out of 1000 (max. 8388607)
  270 compressed objects within 3 object streams
